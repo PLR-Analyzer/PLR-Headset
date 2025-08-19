@@ -1,0 +1,14 @@
+[Unit]
+Description=Configure Raspberry Pi as a UVC gadget
+After=systemd-udev-settle.service
+
+[Service]
+Type=oneshot
+ExecStart=/home/pi/tbi-uvc-gadget/scripts/uvc-gadget.sh
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=uvc-gadget-config
+WorkingDirectory=/tmp
+
+[Install]
+WantedBy=basic.target

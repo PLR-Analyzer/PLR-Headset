@@ -1,0 +1,13 @@
+[Unit]
+Description=Starts the UVC webcam
+After=uvc-gadget.service
+
+[Service]
+ExecStart=uvc-gadget -c 0 uvc.usb0
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=piwebcam
+WorkingDirectory=/tmp
+
+[Install]
+WantedBy=basic.target
