@@ -3,7 +3,7 @@
 This repository contains the code for the headset described in the paper "Construction of a Mobile Headset for Automated Pupillary Motor Assessment". (coming soon)
 
 ## Casing
-The STL files required for printing the casing can be downloaded from the following link: coming soon
+The STL files required for printing the casing can be downloaded from the following link: https://doi.org/10.25835/diuups3v
 
 ## BOM
 Bill of materials (BOM): comprehensive list of all the components, materials, and instructions needed to manufacture the headset: [BOM](docs/BOM.md)
