@@ -20,7 +20,7 @@ sudo sed '/^ExecStart=/ s/-o .-p -- ..u./--skip-login --noclear --noissue --logi
 ```
 9. Next, download the UVC gadget software. This helps your Raspberry Pi stream video over USB:
 ```bash
-git clone git@gibraltar.chi.uni-hannover.de:schepelmann1/tbi-uvc-gadget.git
+git clone https://github.com/PLR-Analyzer/PLR-Headset.git
 ```
 10. Navigate to the downloaded folder:
 ```bash
