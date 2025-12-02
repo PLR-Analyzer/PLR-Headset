@@ -36,12 +36,12 @@ sudo ldconfig
 Use the following command to make the script executable:
 ```bash
 cd
-sudo chmod +x tbi-uvc-gadget/scripts/uvc-gadget.sh
+sudo chmod +x PLR-Headset/scripts/uvc-gadget.sh
 ```
 
 13. After rebooting make the necessary kernel configuration:
 ```bash
-sudo ./tbi-uvc-gadget/scripts/uvc-gadget.sh
+sudo ./PLR-Headset/scripts/uvc-gadget.sh
 ```
 14. Run the uvc-gadget. The -c flag sets libcamera as a source, arg 0 selects the first available camera on the system. All cameras will be listed, you can re-run with -c n to select camera n or -c ID to select via the camera ID.
 ```bash
@@ -49,11 +49,11 @@ uvc-gadget -c 0 uvc.usb0
 ```
 
 ## Make the changes permanent
-If everythink has worked, you can make the changes permanent. To do this copy and and enable the two systemd services in `tbi-uvc-gadget/scripts/uvc-gadget.service`
+If everythink has worked, you can make the changes permanent. To do this copy and and enable the two systemd services in `PLR-Headset/scripts/uvc-gadget.service`
 
 ```bash
-sudo cp tbi-uvc-gadget/scripts/uvc-gadget.service /etc/systemd/system/
-sudo cp tbi-uvc-gadget/scripts/webcam.service /etc/systemd/system/
+sudo cp PLR-Headset/scripts/uvc-gadget.service /etc/systemd/system/
+sudo cp PLR-Headset/scripts/webcam.service /etc/systemd/system/
 sudo systemctl enable uvc-gadget.service
 sudo systemctl enable webcam.service 
 ```
