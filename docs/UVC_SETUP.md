@@ -24,7 +24,7 @@ git clone https://github.com/PLR-Analyzer/PLR-Headset.git
 ```
 10. Navigate to the downloaded folder:
 ```bash
-cd tbi-uvc-gadget
+cd PLR-Headset
 ```
 11. You now need to make, build, and install the software with the following commands:
 ```bash
