@@ -4,7 +4,7 @@ After=systemd-udev-settle.service
 
 [Service]
 Type=oneshot
-ExecStart=/home/pi/tbi-uvc-gadget/scripts/uvc-gadget.sh
+ExecStart=/home/pi/PLR-Headset/scripts/uvc-gadget.sh
 StandardOutput=syslog
 StandardError=syslog
 SyslogIdentifier=uvc-gadget-config
